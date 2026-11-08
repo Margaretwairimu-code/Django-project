@@ -1,0 +1,24 @@
+{% extends 'master.html' %}
+{% load static %}
+
+{% block title %} products {% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="{% static 'images/img_2.jpg' %}" class="img-fluid" alt="">
+            <p><i class="bi bi-amazon"></i></p>
+        </div>
+        <div class="col-sm-6">
+            <img src="{% static 'images/img_3.jpg' %}" class="img-fluid" alt="">
+            <p><i class="bi bi-alarm"></i></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block extra_links %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+{% endblock %}
